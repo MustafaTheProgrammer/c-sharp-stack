@@ -1,0 +1,30 @@
+using System.Collections.Generic;
+
+namespace Stack
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Stack<int> numbers = new Stack<int>();
+            numbers.Push(1); //when the stack is written in the console this will be at the bottom
+            numbers.Push(2); //when the stack is written in the console this will be above 1
+            numbers.Push(3); //when the stack is written in the console this will be above 2
+
+            foreach (var number in number)
+            {
+            Console.WriteLine(number);
+            }
+
+            Console.WriteLine("*****"); //this isn't important, this seperates the stack with all values with the one without every value
+
+            numbers.Pop();
+
+            foreach (var number in number)
+            {
+            Console.WriteLine(number);
+            }
+            //the stack will have only 2 and 1 because 3 was popped
+        }
+    }
+}
